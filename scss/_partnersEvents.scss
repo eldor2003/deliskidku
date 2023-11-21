@@ -1,0 +1,228 @@
+.partnersEvents {}
+
+.partnersEvents_block {
+    padding-bottom: 88px;
+    .partnersEvents_sides {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        .partnersEvents_T {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            .section {
+                &_Mtitle {}
+            
+                &_subtitle {
+                    color: #4B4B4B;
+                    text-align: center;
+                    font-family: "RobotoRegular";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; /* 33.6px */
+                }
+            }
+        }
+
+        .partnersEvents_B {
+            .partnersEvents_B-sides {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 24px;
+
+                .partnersEvents_B-L {
+                    width: calc(50% - 12px);
+                    padding: 24px;
+                    border-radius: 20px;
+                    background: #FFF;
+                    /* Shadow system */
+                    box-shadow: 0px 2px 30px 0px rgba(32, 32, 32, 0.06);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .partnersEvents_B-L-T {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .partnersEvents_B-L-T_title {
+                            color: #343434;
+                            font-family: "LabGrotesqueBlack";
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+
+                        .partnersEvents_B-L-T_link {
+                            color: #2D81F7;
+                            font-family: "RobotoMedium";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+
+                    .partnersEvents_B-L-B {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+
+                        .partnersEvents_B-L-B_item {
+
+                            .partnersEvents_B-L-B_item-T {
+                                padding-bottom: 8px;
+                                display: flex;
+                                align-items: center;
+                                gap: 16px;
+                                .partnersEvents_B-L-B_item-T_day {
+                                    color: #202020;
+                                    font-family: "RobotoMedium";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+
+                                .partnersEvents_B-L-B_item-T_date {
+                                    color: rgba(32, 32, 32, 0.80);
+                                    font-family: "RobotoMedium";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            .partnersEvents_B-L-B_item-B {
+                                .partnersEvents_B-L-B_item-B_event{
+                                    display: flex;
+                                    gap: 16px;
+                                    align-items: start;
+                                    justify-content: start;
+                                    padding: 16px 0;
+                                    border-top: 1px solid var(--border-project, #E3ECF8);
+                                    background: #FFF;
+                                    .partnersEvents_B-L-B_item-B_event-L {}
+
+                                    .partnersEvents_B-L-B_item-B_event-img {
+                                        border-radius: 20px;
+                                        background: #F4F8FE;
+                                        width: 42px;
+                                        height: 42px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+
+                                    .partnersEvents_B-L-B_item-B_event-R {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 8px;
+                                    }
+
+                                    .partnersEvents_B-L-B_item-B_event-timeAndPlace {
+                                        color: #575757;
+                                        font-family: "RobotoRegular";
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                    }
+
+                                    .partnersEvents_B-L-B_item-B_event-name {
+                                        color: #202020;
+                                        font-family: "RobotoRegular";
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .partnersEvents_B-R {
+                    width: calc(50% - 12px);
+                    padding: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .partnersEvents_B-R-T {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .partnersEvents_B-R-T_title {
+                            color: #343434;
+                            font-family: "LabGrotesqueBlack";
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+
+                        .partnersEvents_B-R-T_link {
+                            color: #2D81F7;
+                            font-family: "RobotoMedium";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                    .partnersEvents_B-R-B {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        .partnersEvents_B-R-B_news {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .partnersEvents_B-R-B_news-title {
+                                color: #343434;
+                                font-family: "RobotoBold";
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+
+                            .partnersEvents_B-R-B_news-text {
+                                color: #575757;
+                                font-family: "RobotoRegular";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            .partnersEvents_B-R-B_news-link {
+                                color: #2D81F7;
+                                font-family: "RobotoMedium";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
