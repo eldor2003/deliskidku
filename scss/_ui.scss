@@ -38,11 +38,35 @@ div, a, span, p, h1, h2, h3, h4, h5, h6, ul, li, nav, * {
     font-weight: 900;
 }
 
+@mixin laptop_l {
+    @media (max-width:1750px) {
+        @content;
+    }
+}
+
+@mixin mobile_big {
+    @media (max-width:1199px) {
+        @content;
+    }
+}
+
+@mixin mobile_375 {
+    @media (max-width:424px) {
+        @content;
+    }
+}
+
+@mixin mobile_320 {
+    @media (max-width:374px) {
+        @content;
+    }
+}
+
 body {
     background: #FBFBFB;
 }
 
-.defText {
+.def_Text {
     color: #202020;
     font-family: "RobotoRegular";
     font-size: 16px;
@@ -52,8 +76,22 @@ body {
 }
 
 .container-main {
-    max-width: 1200px;
+    max-width: 1240px;
+    padding: 0 20px;
     margin: 0 auto;
+
+    @include mobile_big {
+        max-width: 430px;
+        padding: 0 20px;
+    }
+
+    @include mobile_375 {
+        max-width: 375px;
+    }
+
+    @include mobile_320 {
+        max-width: 320px;
+    }
 }
 
 .section_title {
@@ -67,6 +105,11 @@ body {
     padding: 12px 24px;
     border-radius: 30px;
     background: #2D81F7;
+
+    @include mobile_big {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
 }
 .section_Mtitle {
     color: #202020;
@@ -76,4 +119,12 @@ body {
     font-style: normal;
     font-weight: 900;
     line-height: 130%;
+
+    @include mobile_big {
+        font-size: 18px;
+
+        br {
+            display: none;
+        }
+    }
 }
